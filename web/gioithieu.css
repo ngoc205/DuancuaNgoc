@@ -1,0 +1,16 @@
+
+.content {
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.content p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+}
