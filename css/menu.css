@@ -1,0 +1,367 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    background-color: #FF0000;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.banner-slideshow {
+    position: relative;
+    width: 100%;          /* Chiều rộng 100% màn hình hoặc container */
+    height: 700px;        /* Chiều cao cố định cho banner */
+    overflow: hidden;     /* Đảm bảo chỉ hiển thị một phần banner */
+}
+
+.banner {
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; /* Chuyển đổi độ mờ dần mượt mà */
+    animation: slide 9s infinite;
+}
+
+.banner img {
+    margin-top: 10px;
+    
+    width: 100%;
+    height:100%;
+    object-fit: cover;   /* Đảm bảo hình ảnh bao phủ toàn bộ khu vực mà không bị méo */
+}
+
+.banner:nth-child(1) {
+    animation-delay: 0s; /* Banner đầu tiên */
+}
+
+.banner:nth-child(2) {
+    animation-delay: 3s; /* Banner thứ hai bắt đầu sau 3s */
+}
+
+.banner:nth-child(3) {
+    animation-delay: 6s; /* Banner thứ ba bắt đầu sau 6s */
+}
+
+@keyframes slide {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 30% {
+        opacity: 1;
+    }
+    40%, 90% {
+        opacity: 0;
+    }
+}
+
+
+.banner:nth-child(1) {
+    animation-delay: 0s; /* Banner đầu tiên */
+}
+
+.banner:nth-child(2) {
+    animation-delay: 3s; /* Banner thứ hai bắt đầu sau 3s */
+}
+
+.banner:nth-child(3) {
+    animation-delay: 6s; /* Banner thứ ba bắt đầu sau 6s */
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.category {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.category div {
+    width: 23%;
+    background-color:white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.category div img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.category div a {
+    display: block;
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button {
+    display: inline-block;       /* Hiển thị như một khối inline */
+    padding: 10px 20px;          /* Khoảng cách bên trong nút */
+    background-color: brown;   /* Màu nền của nút */
+    color: white;                
+    text-align: center;          /* Căn giữa chữ bên trong nút */
+    text-decoration: none;       /* Bỏ gạch chân */
+    border-radius: 5px;          /* Bo góc nút */
+    font-weight: bold;           /* In đậm chữ */
+    margin-top: 10px;            /* Khoảng cách trên của nút */
+}
+
+.button:hover {
+    background-color: brown;   /* Màu nền khi hover */
+    cursor: pointer;             /* Thay đổi con trỏ chuột thành dạng tay */
+}
+
+.ke{
+    width: 550px;
+    height: 5px;
+    background-color: red;
+    display: inline-block;
+}
+.inline{
+    display: inline;
+    font-size: 40px;
+}
+
+.why-choose {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.why-choose h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.features div {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.features div img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.features div h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.button-green {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+header {
+    background-color:white;
+    color:black;
+    font-size: medium;
+    padding: 10px 0;
+}
+body{
+    background-color: #ccc;
+}
+
+
+.navbar{
+    background-color:brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    top: 0;
+    width: 100%;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color:beige;
+    padding: 50px 20px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 5px; /* Khoảng cách giữa Đăng Nhập và Đăng Ký */
+    margin-left: 2px;
+}
+
+.login {
+    color: white;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.login:hover {
+    background-color: white;
+    color: #333;
+    transition: 0.3s;
+}
+
+/* Thiết kế cho Đăng Ký */
+.signup {
+    color: #FF4500; /* Màu sắc nổi bật cho Đăng Ký */
+    background-color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #FF4500;
+    text-decoration: none;
+}
+
+.signup:hover {
+    background-color: #FF4500;
+    color: white;
+    transition: 0.3s;
+}
+
+h3 {
+    color: #333;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    border-radius: 10px;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .grid-item img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+  }
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #9f3f0c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #9f3f0c;
+    border-radius: 5px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+}
+.social-icons a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact h2 {
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-size: 18px;
+}

@@ -1,0 +1,36 @@
+.info-section {
+    margin: 20px 0;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.application-form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.application-form h4 {
+    text-align: left;
+}
+
+.application-form .form-label {
+    font-weight: bold;
+}
+
+.application-form .form-control {
+    width: 100%; /* Kéo dài ô điền thông tin */
+    margin: 0; /* Đảm bảo không có khoảng cách bên ngoài */
+}

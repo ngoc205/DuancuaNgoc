@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/apply.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Nộp Đơn - J&T Express</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>J&T Express</h1>
+            <nav>
+                <ul>
+                    <li><b><a href="menu.html">Trang chủ</a></b></li>
+                    <li><b><a href="gioithieu.html">Giới thiệu</a></b></li>
+                    <li><b><a href="dichvu.html">Dịch vụ</a></b></li>
+                    <li><b><a href="lienhe.html">Liên hệ</a></b></li>
+                    <li><b><a href="tuyendung.html">Tuyển dụng</a></b></li>
+                    <li><b><a href="tracuu.html">Tra cứu</a></b></li>
+                    <div class="auth-buttons">
+                        <li><a href="dangnhap.html" class="login">Đăng Nhập</a></li>
+                        <li><a href="dangki.html" class="signup">Đăng Ký</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="text-center my-4">Nộp Đơn Ứng Tuyển</h2>
+        <div class="info-section">
+            <h3 class="text-center">Thông Tin Về Các Vị Trí Tuyển Dụng</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Chuyên Viên Kinh Doanh</h5>
+                            <p class="card-text">Tìm kiếm và phát triển khách hàng mới, duy trì mối quan hệ với khách hàng </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Nhân Viên Giao Nhận</h5>
+                            <p class="card-text">Chịu trách nhiệm giao hàng đúng hạn và đảm bảo chất lượng dịch vụ.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Chuyên Viên Marketing</h5>
+                            <p class="card-text">Phát triển chiến lược marketing để quảng bá dịch vụ của công ty.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form action="submit_application.html" method="post" class="application-form my-4">
+            <h4 class="mb-4">Thông Tin Ứng Viên</h4>
+            <div class="mb-3">
+                <label for="fullName" class="form-label">Họ và Tên</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Nhập họ và tên" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Nhập email" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Số Điện Thoại</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+            </div>
+            <div class="mb-3">
+                <label for="position" class="form-label">Vị Trí Ứng Tuyển</label>
+                <select class="form-select" id="position" name="position" required>
+                    <option value="">Chọn vị trí</option>
+                    <option value="chuyen-vien-kinh-doanh">Chuyên Viên Kinh Doanh</option>
+                    <option value="nhan-vien-giao-nhan">Nhân Viên Giao Nhận</option>
+                    <option value="chuyen-vien-marketing">Chuyên Viên Marketing</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="cv" class="form-label">Tải CV của bạn (PDF)</label>
+                <input type="file" class="form-control" id="cv" name="cv" accept=".pdf" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Thư Xin Việc</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Nêu rõ lý do bạn muốn ứng tuyển" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Gửi Đơn Ứng Tuyển</button>
+        </form>
+    </main>
+
+    <footer>
+        <section id="contact" class="contact bg-dark text-light py-5"></section>
+        <div class="container">
+            <h2 class="text-center mb-4">Liên Hệ Với Chúng Tôi</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Thông tin liên hệ</h4>
+                    <p><strong>Địa chỉ:</strong> 228 Minh Khai, Quận Hai Bà Trưng, TP. Hà Nội</p>
+                    <p><strong>Email:</strong> contact@jtexpress.vn</p>
+                    <p><strong>Điện thoại:</strong> +84 123 456 789</p>
+                </div>
+                <div class="col-md-6">
+                    <h4>Kết nối với chúng tôi</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" target="_blank" class="btn btn-outline-light btn-lg me-2">
+                            <i class="bi bi-facebook"></i> Facebook
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="btn btn-outline-light btn-lg me-2">
+                            <i class="bi bi-instagram"></i> Instagram
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="btn btn-outline-light btn-lg me-2">
+                            <i class="bi bi-youtube"></i> YouTube
+                        </a>
+                        <a href="mailto:contact@jtexpress.vn" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
